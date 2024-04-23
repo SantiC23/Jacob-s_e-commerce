@@ -1,0 +1,214 @@
+/*Index style*/
+
+body {
+    background-color: white
+}
+
+.Jacobsh1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+    font-size: 35px;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    margin-top: 5px;
+}
+
+.containerSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  
+}
+
+.Registro {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.login-ic {
+padding: 25px;
+font-size: 25px;
+color: black;
+}
+
+.navBar {
+   background-color: #ef4444;
+   text-align: center;
+}
+
+.Lista {
+  flex-flow: row;
+  display: flex;
+  background-color: #ef4444;
+  justify-content: space-between;
+  padding: 0;
+
+}
+
+ .ListaLi {
+  background-color: #ef4444;
+  margin-right: 1em; /* Espaciado inicial */
+  margin-left: 8em;
+  display: flex;
+  margin: 0 1em;
+}
+ 
+
+
+ .Links {
+  background-color: #ef4444;
+ }
+
+ .bi {
+  margin-right: 0.5em;
+ }
+
+ .ListaLi:last-child {
+  margin-right: 8em; /* Ampliar el margen derecho para que no se salga de la pantalla */
+}
+
+
+
+.carrousel {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.carousel-item {
+    text-align: center; /* Centrar el contenido horizontalmente */
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Establecer el ancho al 100% del contenedor */
+    height: 50%; /* Establecer la altura deseada */
+    object-fit: cover; /* Mantener la proporción de la imagen y recortarla si es necesario */
+    max-width: 100%; /* Asegurar que la imagen no sobrepase el ancho del contenedor */
+    max-height: 100%; /* Asegurar que la imagen no sobrepase la altura del contenedor */
+    height: auto; /* Permitir que la imagen mantenga su proporción de aspecto */
+    display: block; /* Eliminar el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+  }
+
+  /*Img Style*/
+
+  .img-products {
+    height: 300px;
+    width: auto;
+   
+  }
+  
+  .clothesCont {
+    display: flex;
+  
+  }
+
+
+
+
+
+
+
+
+
+  .AssSide {
+    width: 200px; /* Establecer un ancho para el aside */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px;
+
+  }
+  
+
+/*Nosotros style*/
+
+body {
+ 
+}
+
+.Nosh1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  font-size: 35px;
+  margin-right: 5px;
+  background-color: #ef4444;
+  border-radius: 10px;
+}
+
+.HistoriaEmpresa {
+  display: flex;
+  text-align: justify;
+}
+
+.JacobsImg {
+  margin-left: 20px;
+  height: 350px;
+  margin-right: 30px;
+  box-shadow: 10px 10px 10px 0px;
+  border-radius: 15px;
+}
+
+.ContenedorGral {
+  margin-inline: 5px;
+
+}
+
+.Vision {
+  margin-left: 15px;
+}
+
+.footNos {
+  background-color: #2563eb;
+  border-radius: 5px;
+}
+
+/*Sucursal Style*/
+
+.sucursalh1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  font-size: 35px;
+  margin-right: 5px;
+  background-color: #ef4444;
+
+}
+
+.sucursal {
+  display: flex;
+  flex-wrap: wrap; /* Para permitir que los elementos se envuelvan a la siguiente fila */
+  
+}
+
+.sucursal > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sucursal > ul > li {
+  width: 50%; /* Ajusta el ancho de cada elemento li para que ocupen la mitad del contenedor con un pequeño espacio entre ellos */
+  margin-bottom: 20px; /* Espacio entre cada par de elementos */
+}
+
+.sucursal > ul > li .sucursal-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sucursal-img {
+  width: 180px; /* Ajusta el tamaño de la imagen según sea necesario */
+  margin-right: 20px; /* Espacio entre la imagen y la información */
+}

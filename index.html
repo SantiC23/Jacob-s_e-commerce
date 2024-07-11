@@ -28,7 +28,15 @@
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
-                <a href="login.html"><i class="bi bi-person-circle login-ic"></i> Ingresar</a>
+                <div class="dropdown">
+                  <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ingreso Usuario
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Crear cuenta</a></li>
+                    <li><a class="dropdown-item" href="#">Cerrar cesión</a></li>
+                  </ul>
+                </div>
                 <a href="Cart.html"><i class="bi bi-cart-fill login-ic"></i>Carrito</a>
               </form> 
             </div>
@@ -60,11 +68,11 @@
       </header>
       <div class="row">
       <aside class="AssSide col-2 ps-4" >
-        <h3>Aside</h3>
+        <h3>Novedades</h3>
         <ul>
-          <li><a href="#">Enlace 1</a></li>
-          <li><a href="#">Enlace 2</a></li>
-          <li><a href="#">Enlace 3</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Reseñas</a></li>
         </ul>
       </aside>
       <div class="carrousel col-10">
@@ -128,5 +136,7 @@
     ></script>
     <script src="Cart.js" ></script>
     <script src="script.js"></script>
+    <script src="Carrito.js" ></script>
+    <script src="login.js"></script>
   </body>
 </html>

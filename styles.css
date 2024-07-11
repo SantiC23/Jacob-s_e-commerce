@@ -11,10 +11,13 @@ body {
     padding-right: 50px;
     font-size: 35px;
     margin-right: 5px;
-    box-shadow: 5px 5px 5px 5px;
-    border-radius: 15px;
-    background-color: #f0f0f0;
     margin-top: 5px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 35px;
+    background-color: black;
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 1px;
 }
 
 .containerSearch {
@@ -212,3 +215,6 @@ body {
   width: 180px; /* Ajusta el tamaño de la imagen según sea necesario */
   margin-right: 20px; /* Espacio entre la imagen y la información */
 }
+
+
+/*Products style*/

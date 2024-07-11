@@ -1,8 +1,16 @@
 function showWelcome() {
-  alert("¡Bienvenido a Jacob's!"); // Alerta que debe aparecer solo una vez
+  // Verificar si la cookie ya se ha establecido
+  if (document.cookie.indexOf('welcomeShown=true') === -1) {
+      // Mostrar el alert solo si la cookie no está establecida
+      alert("¡Bienvenido a Jacob's!");
+      
+      // Establecer la cookie para indicar que el alert ha sido mostrado
+      document.cookie = 'welcomeShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+  }
 }
 
 showWelcome();
+
 
 // Fetch para traer productos
 const url = "https://fakestoreapi.com/products";
@@ -21,7 +29,7 @@ fetch(url)
     function showProducts() {
       data.forEach((element) => {
         clothesCont.innerHTML += `
-          <div class="col border border-dark" data-id=${element.id}>
+          <div class="col border border-dark" >
             <div class="p-3">
               <h1>${element.title}</h1>
               <img class="img-products" src="${element.image}">
@@ -29,7 +37,7 @@ fetch(url)
               <p>${element.description}</p>
               <p>$${element.price}</p>
             </div>
-            <button class="button-cart">Agregar al carrito</button>
+            <button class="button-cart" data-id=${element.id}>Mas info</button>
           </div>`;
       });
     }
@@ -37,19 +45,25 @@ fetch(url)
     showProducts();
 
     // Configuración de event listener después de mostrar los productos
-    const btnCart = document.querySelector(".button-cart");
+    const btnCart = document.querySelectorAll(".button-cart");
+    console.log(btnCart);
 
-    btnCart.addEventListener("click", () => {
-      console.log("BtnClick");
-      window.location = "Productos.html";
-    });
+    function getInfoById() {
+      btnCart.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+          console.log("BtnClick");
+          const productId = event.target.getAttribute("data-id");
+          window.location.href = `Productos.html?id=${productId}`;
+          console.log(productId);
+        });
+      });
+    }
 
+    getInfoById();
     console.log(data);
   })
   .catch((error) => {
     console.error("Hubo un problema con tu operación de fetch:", error);
   });
 
-// Configuración de localStorage
-const voidArray = JSON.stringify([]);
-localStorage.setItem("cartArray", voidArray);
+
